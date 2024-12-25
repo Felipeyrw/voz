@@ -1,0 +1,29 @@
+
+body {
+    background-color: pink;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+h1 {
+    text-align: center;
+    }
+blockquote {
+    text-align: center;
+    }
+::-webkit-scrollbar-track {
+    background: #be6289; /* Cor de fundo do trilho */
+    border-radius: 10px; /* Borda arredondada do trilho */
+    }
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem vertical */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+    }
+::-webkit-scrollbar-thumb {
+    background-color: #ff00bf; /* cor do polegar */
+    border-radius: 6px; /* arredondamento do polegar */
+    }
+::-webkit-scrollbar-thumb:hover {
+    background: #72154b; /* Cor do polegar ao passar o mouse */
+    }
