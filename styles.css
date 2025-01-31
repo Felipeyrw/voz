@@ -1,29 +1,111 @@
-
 body {
-    background-color: pink;
-    font-family: Arial;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    }
-h1 {
+    background-color: #f9f9f9;
+}
+
+/* Minimalista e Elegante */
+.poema.minimalista {
+    background-color: #fff8e1;
+    color: #333;
     text-align: center;
-    }
-blockquote {
+    padding: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.poema.minimalista h1 {
+    font-size: 2.5rem;
+}
+
+.poema.minimalista blockquote {
+    font-size: 1.2rem;
+}
+
+.poema.minimalista .highlight {
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+/* Poema Interativo */
+.poema.interativo {
+    background-image: url('subtle-background.jpg');
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    }
-::-webkit-scrollbar-track {
-    background: #be6289; /* Cor de fundo do trilho */
-    border-radius: 10px; /* Borda arredondada do trilho */
-    }
-::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem vertical */
-    height: 12px; /* Altura da barra de rolagem horizontal */
-    }
-::-webkit-scrollbar-thumb {
-    background-color: #ff00bf; /* cor do polegar */
-    border-radius: 6px; /* arredondamento do polegar */
-    }
-::-webkit-scrollbar-thumb:hover {
-    background: #72154b; /* Cor do polegar ao passar o mouse */
-    }
+    padding: 50px;
+}
+
+.poema.interativo blockquote {
+    font-size: 1.5rem;
+}
+
+.poema.interativo .highlight {
+    color: #ff6347;
+    cursor: pointer;
+}
+
+.poema.interativo .highlight:hover {
+    text-decoration: underline;
+}
+
+/* Poema Manuscrito */
+.poema.manuscrito {
+    background-color: #f4e1d2;
+    padding: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.poema.manuscrito blockquote {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.poema.manuscrito img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Poema com Animação de Escrita */
+.poema.escrita {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+.poema.escrita #poema-text {
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+    animation: typing 5s steps(40) 1s forwards;
+}
+
+/* Poema Ilustrado */
+.poema.ilustrado {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: left;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poema.ilustrado img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
